@@ -1,0 +1,243 @@
+/* styling for the logo */
+*
+{
+    margin: 0;
+    padding: 0;
+    z-index: 2;
+}
+
+/* navigation image styling */
+#logo 
+{
+    margin:-1px 4px;
+    z-index: 0;
+}
+#logo img
+{
+    margin:7px 16px;
+}
+/* navigation bar  */
+#navbar
+{
+    display: flex;
+    position: relative;
+    top:0px;
+    
+}
+#navbar ul
+{
+    display: flex;
+    margin-top: 23px;
+    justify-content: center;
+}
+#navbar::before
+{
+    content:" ";
+    background-color: black;
+    position: absolute;
+    z-index: -1;
+    height: 100%;
+    width: 100%;
+    top:0px;
+    left:0px;
+    opacity: 0.4;
+} 
+
+#navbar ul li
+{
+    list-style: none;
+    justify-content: center;
+}
+#navbar ul li a{
+    display: block;
+    padding: 13px 13px;
+    color: white;
+    text-decoration: none;
+}
+#navbar ul li a:hover
+{
+    background-color: white;
+    color: black;
+    border-radius: 20px;
+}
+/* home section */
+
+#home
+{
+    display: flex;
+    flex-direction: column;
+    padding: 5px 200px;
+    justify-content: center;
+    align-items: center;
+    height: 515px;
+    top:0px;
+}
+#home::before
+{
+ content: '';
+ position: absolute;
+ width: 100%;
+ height: 80%;
+ top:0px;
+ left:0px;
+ background: url("../food3.jpg") no-repeat center center/cover;
+ opacity: 0.89;
+}
+#home h1
+{
+    color: whitesmoke;
+    font-size: 3.8rem;
+    padding: 12px;
+    text-align: center;
+    text-decoration: underline;
+    font-family: 'Lobster', cursive;
+}
+#home p
+{
+    color: whitesmoke;
+    font-size: 1.5rem;
+    text-align: center;
+    font-family: 'Lato', sans-serif;
+
+}
+.button
+{
+    padding: 8px 20px;
+    margin-top: 12px;
+    border:2px solid black;
+    background-color: white;
+    color:black;
+    border-radius: 11px;
+    cursor: pointer;
+}
+/* Utility Classes */
+.h-primary{
+    font-family:'Lobster', cursive; ;
+    font-size: 3.8rem;
+    padding: 12px;
+}
+
+.h-secondary{
+    font-family: 'Lato', sans-serif;
+    font-size: 2.3rem;
+    padding: 12px;
+}
+
+.btn{
+    padding: 6px 20px;
+    border: 2px solid white;
+    background-color: brown;
+    color: white;
+    margin: 17px;
+    font-size: 1.5rem;
+    border-radius: 10px;
+    cursor:pointer;
+}
+
+.center{
+    text-align: center;
+}
+/* services */
+#services
+{
+    display: flex;
+    margin: 34px;
+}
+#services .box
+{
+    border:2px solid rgb(235, 129, 129);
+    margin:3px 6px;
+    padding:34px;
+    background-color: rgb(238, 227, 227);
+    border-radius: 20px;
+}
+#services .box img
+{
+    display: block;
+    margin:auto;
+    height:168px;
+    padding:8px;
+    width:190px;
+    border-radius: 20px;
+}
+#services .box p
+{
+    font-size: large;
+}
+/* client section */
+#client-section
+{
+    position: relative;
+    height:318px;
+}
+#client-section::before
+{
+content: '';
+background: url('../food7.jpg') ;
+position: absolute;
+height:100%;
+width: 100%;
+z-index: -1;
+opacity: 0.7;
+}
+#clients
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#clients img{
+    height:124px;
+
+    
+}
+
+.client-item
+{
+    padding:34px;
+}
+/* form */
+#contact
+{
+ position: relative;
+ height: 350px;
+ margin-top: 23px;
+}
+#contact::before
+{
+    content: '';
+    position: absolute;
+    background: url('../food5.jpg') no-repeat center center/cover;
+    height: 100%;
+    width:100%;
+    z-index: -1;
+    opacity: 0.4;
+}
+#box1
+{
+    display: flex;
+    flex-direction: column;  
+    justify-content: center;
+    align-items: center;
+    width:100%
+}
+.form input
+{
+   height:20px;
+    margin: 10px;
+   font-size: large;
+   width: 450px;
+
+}
+/* the fotter */
+
+footer
+{
+    background-color: rgb(85, 79, 79);
+    color: rgb(235, 202, 152);
+    font-size: medium;
+    height:33px;
+    padding: 23px
+}
+
+
